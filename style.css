@@ -3,10 +3,41 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  /*font-family: 'Roboto', sans-serif;*/
+}
+
+p {
+  font-size: 17px;
+  line-height: 29px;
+  text-align: left;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 27px;
+  color: #ffffff;
+  background-color: tomato;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+h4 {
+  font-size: 21px;
+  line-height: 25px;
+  color: #fa382f;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 21px;
+  line-height: 25px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 20px 0;
 }
 
 .header {
+  border-bottom: 1px solid black;
   height: 60vh;
   display: flex;
   flex-direction: column;
@@ -19,16 +50,44 @@ body {
   background-color: tomato;
   position: relative;
   padding: 0 40px;
-  color: #fff;
 }
 
-.icons-container {
+.header-text {
+  color: #ffffff;
+}
+
+.header-text p {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0;
+  letter-spacing: 0.52px;
+  opacity: 1;
+}
+
+.header-text h1 {
+  font-size: 40px;
+  text-transform: lowercase;
+  margin: 5px auto;
+  line-height: 49px;
+}
+
+.header-text h2 {
+  font-size: 24px;
+  text-transform: lowercase;
+  margin-top: 0;
+  line-height: 29px;
+}
+
+.icon-container-top {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 20px;
 }
 
-.icons-container a {
+.icon-container-top a {
   text-decoration: none;
+  color: #ffffff;
 }
 
 .fa {
@@ -36,8 +95,12 @@ body {
   border-radius: 50%;
   padding: 10px;
   font-size: 20px;
-  color: white;
-  margin-right: 5px;
+  margin-right: 6px;
+}
+
+.bold-text {
+  font-weight: bold;
+  margin-left: 15px;
 }
 
 .profile-image {
@@ -50,7 +113,23 @@ body {
   bottom: -20px;
 }
 
-.featured-projects {
+.summary-section {
+  background-color: #f4f4f4;
+  padding: 58px 40px;
+  font-size: 17px;
+  line-height: 29px;
+}
+
+.tech-section {
+  background-color: #ffffff;
+  /*padding: 58px 40px;*/
+  padding: 40px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.featured-projects,
+.other-projects {
   background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
@@ -68,13 +147,18 @@ body {
   height: 180px;
 }
 
-.container {
+.project-container {
   position: relative;
   width: 100%;
   height: 180px;
 }
 
+.project-container p {
+  font-family: "Roboto", sans-serif;
+}
+
 .image {
+  /* CHANGE NAME OF THIS CLASS!!!! */
   display: block;
   width: 100%;
   height: 100%;
@@ -93,4 +177,127 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.overlay p {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fddfe7;
+}
+
+.bold-color-text {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: tomato;
+}
+
+.featured-projects a {
+  text-decoration: none;
+}
+
+.bold-color-arrows {
+  text-decoration: underline;
+  font-weight: bold;
+  color: tomato;
+}
+
+.my-thoughts {
+  background-color: #ffffff;
+  padding: 58px 40px;
+  text-align: center;
+}
+
+.my-thoughts img {
+  border: 1px solid #707070;
+}
+
+.more-thoughts {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.span-dates {
+  font-weight: normal;
+  color: tomato;
+}
+
+.skills-section {
+  background-color: #f4f4f4;
+  padding: 58px 40px;
+  text-align: center;
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: auto 40px;
+}
+
+.skills-wrapper ul {
+  list-style-type: none;
+  font-weight: bold;
+  line-height: 29px;
+}
+
+.skills-color-text {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: tomato;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+}
+
+.for-more-section {
+  background-color: #ffffff;
+  /*padding: 58px 40px;*/
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container-bottom {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.icon-container-bottom a {
+  text-decoration: none;
+  color: tomato;
+}
+
+/*.fa {
+  border: 3px solid tomato;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+  margin-right: 6px;
+}*/
+
+.footer {
+  background-color: #072bce;
+  color: #ffffff;
+  padding: 40px 40px 70px 40px;
+  text-align: center;
+}
+
+.footer address p {
+  font-style: normal;
+  margin: 4px 0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-name {
+  font-weight: bold;
 }
