@@ -17,8 +17,10 @@ h3 {
   color: #ffffff;
   background-color: tomato;
   text-transform: uppercase;
-  display: inline-block;
   padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
 
 h4 {
@@ -36,9 +38,16 @@ h5 {
   margin: 20px 0;
 }
 
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+  padding: 0;
+  margin: 0;
+}
+
 .header {
   border-bottom: 1px solid black;
-  height: 60vh;
+  height: 508px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,9 +89,9 @@ h5 {
 }
 
 .icon-container-top {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 20px;
+  position: absolute;
+  top: 60px;
+  right: 40px;
 }
 
 .icon-container-top a {
@@ -120,12 +129,35 @@ h5 {
   line-height: 29px;
 }
 
+.summary-color-line {
+  display: inline-block;
+  width: 45px;
+  height: 9px;
+  border-top: 4px solid tomato;
+}
+
+.summary-color-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border: 2px solid tomato;
+  background-color: tomato;
+  margin: 0 15px 6px -1px;
+  border-radius: 50%;
+}
+
 .tech-section {
   background-color: #ffffff;
   /*padding: 58px 40px;*/
   padding: 40px;
   text-align: center;
   font-size: 17px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tech-section p {
+  text-align: center;
 }
 
 .featured-projects,
@@ -134,6 +166,20 @@ h5 {
   display: flex;
   flex-direction: column;
   padding: 40px;
+  font-family: "Roboto", sans-serif;
+}
+
+.featured-projects {
+  padding-bottom: 10px;
+}
+
+.other-projects {
+  padding: 10px 40px;
+  text-align: center;
+}
+
+.featured-projects .bold-color-text {
+  font-family: "Roboto", sans-serif;
 }
 
 .project-wrapper {
@@ -151,17 +197,19 @@ h5 {
   position: relative;
   width: 100%;
   height: 180px;
-}
-
-.project-container p {
+  margin-top: 15px;
   font-family: "Roboto", sans-serif;
 }
 
-.image {
-  /* CHANGE NAME OF THIS CLASS!!!! */
+/*.project-container p {
+  font-family: "Roboto", sans-serif;
+} */
+
+.blog-image {
   display: block;
   width: 100%;
   height: 100%;
+  margin-bottom: 25px;
 }
 
 .overlay {
@@ -186,6 +234,21 @@ h5 {
   color: #fddfe7;
 }
 
+.tag-wrapper {
+  display: flex;
+}
+
+.tag-wrapper p {
+  font-size: 9px;
+  font-family: "Roboto", sans-serif;
+  color: #2b2e34;
+  background-color: #fddfe7;
+  border: 1px solid #fddfe7;
+  padding: 0 8px;
+  margin-right: 3px;
+  border-radius: 3px;
+}
+
 .bold-color-text {
   text-transform: uppercase;
   font-weight: bold;
@@ -193,6 +256,10 @@ h5 {
 }
 
 .featured-projects a {
+  text-decoration: none;
+}
+
+.project-container a {
   text-decoration: none;
 }
 
@@ -205,16 +272,30 @@ h5 {
 .my-thoughts {
   background-color: #ffffff;
   padding: 58px 40px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .my-thoughts img {
   border: 1px solid #707070;
+  margin-top: 20px;
 }
 
 .more-thoughts {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+}
+
+.my-blog p {
+  font-family: "Roboto", sans-serif;
+  line-height: 32px;
+  margin-top: 5px;
+}
+
+.blog-date {
+  font-weight: normal;
+  color: tomato;
+  margin-bottom: 5px;
 }
 
 .span-dates {
@@ -225,7 +306,8 @@ h5 {
 .skills-section {
   background-color: #f4f4f4;
   padding: 58px 40px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .skills-wrapper {
@@ -245,6 +327,7 @@ h5 {
   list-style-type: none;
   font-weight: bold;
   line-height: 29px;
+  text-align: center;
 }
 
 .skills-color-text {
@@ -271,9 +354,27 @@ h5 {
   margin-bottom: 20px;
 }
 
-.icon-container-bottom a {
-  text-decoration: none;
+.icon-container-bottom .fa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid tomato;
   color: tomato;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  font-size: 29px;
+  padding: 10px;
+}
+
+.icon-container-bottom p {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  width: 100px;
 }
 
 /*.fa {
@@ -298,6 +399,25 @@ h5 {
   font-family: "Roboto", sans-serif;
 }
 
+.footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .contact-name {
   font-weight: bold;
 }
+
+.icon-container-bottom a {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.bottom-icon-text {
+  font-size: 11px;
+  color: tomato;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* @media (max width 60%) add this to content containers */
