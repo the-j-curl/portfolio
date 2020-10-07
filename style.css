@@ -51,11 +51,11 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /*background: url(./assets/imagine.jpg);
+  background: url(./assets/record-med.jpg);
   background-repeat: no-repeat;
   background-attachment: local;
   background-position-x: center;
-  background-position-y: 45%;*/
+  background-position-y: 70%;
   background-color: tomato;
   position: relative;
   padding: 0 40px;
@@ -104,7 +104,7 @@ h6 {
   border-radius: 50%;
   padding: 10px;
   font-size: 20px;
-  margin-right: 6px;
+  /*margin-right: 6px;*/
 }
 
 .bold-text {
@@ -127,6 +127,9 @@ h6 {
   padding: 58px 40px;
   font-size: 17px;
   line-height: 29px;
+  /*display: flex;
+  align-items: center;
+  justify-content: center;*/
 }
 
 .summary-color-line {
@@ -350,8 +353,10 @@ h6 {
 
 .icon-container-bottom {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-bottom: 20px;
+  width: 100%;
+  margin-top: 30px;
 }
 
 .icon-container-bottom .fa {
@@ -374,7 +379,13 @@ h6 {
   text-transform: uppercase;
   font-size: 11px;
   font-weight: bold;
-  width: 100px;
+  /*width: 100px;*/
+}
+
+.icon-container-bottom a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*.fa {
@@ -420,4 +431,11 @@ h6 {
   font-weight: bold;
 }
 
-/* @media (max width 60%) add this to content containers */
+/* @media (max width 60%) add this to content containers 
+
+@media (min-width: 768px) {*/
+
+@media (min-width: 1025px) {
+  .summary-section p {
+  }
+}
