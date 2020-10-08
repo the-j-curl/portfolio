@@ -128,6 +128,16 @@ h6 {
   padding: 58px 40px;
 }
 
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .summary {
   background-color: #f4f4f4;
 
@@ -188,9 +198,12 @@ h6 {
   max-width: 300px;
 }
 
-.other-projects {
-  /*padding: 10px 40px; */
+/*.other-projects {
   text-align: center;
+}*/
+
+.other-projects-article {
+  margin-left: 0;
 }
 
 .featured-projects .bold-color-text {
@@ -308,10 +321,20 @@ h6 {
   text-align: center;
 }
 
+.my-blog {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
 .my-blog p {
   font-family: "Roboto", sans-serif;
   line-height: 32px;
   margin-top: 5px;
+}
+
+.hide-blog {
+  display: none;
 }
 
 .blog-date {
@@ -451,7 +474,7 @@ h6 {
 /* @media (max width 60%) add this to content containers */
 
 @media (min-width: 768px) {
-  .container {
+  .content {
     width: 60%;
   }
 
@@ -460,11 +483,6 @@ h6 {
   }
 }
 @media (min-width: 1025px) {
-  .main-wrapper {
-    padding-left: 416px;
-    padding-right: 416px;
-  }
-
   .header-container {
     width: 60%;
   }
@@ -479,6 +497,11 @@ h6 {
     color: tomato;
   }
 
+  .hide-blog {
+    display: flex;
+    flex-direction: column;
+  }
+
   .icon-container-bottom {
     width: 60%;
   }
@@ -487,5 +510,12 @@ h6 {
     height: 40px;
     width: 40px;
     font-size: 40px;
+  }
+
+  .flex-box-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
