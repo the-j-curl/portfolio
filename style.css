@@ -51,7 +51,8 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: url(./assets/record-med.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(187, 187, 187, 0.1)),
+    url(./assets/record-med.jpg);
   background-repeat: no-repeat;
   background-attachment: local;
   background-position-x: center;
@@ -63,6 +64,7 @@ h6 {
 
 .header-text {
   color: #ffffff;
+  padding: 0 40px;
 }
 
 .header-text p {
@@ -122,9 +124,13 @@ h6 {
   bottom: -20px;
 }
 
-.summary-section {
-  background-color: #f4f4f4;
+.main-wrapper {
   padding: 58px 40px;
+}
+
+.summary {
+  background-color: #f4f4f4;
+
   font-size: 17px;
   line-height: 29px;
   /*display: flex;
@@ -149,17 +155,17 @@ h6 {
   border-radius: 50%;
 }
 
-.tech-section {
+.tech {
   background-color: #ffffff;
   /*padding: 58px 40px;*/
-  padding: 40px;
+  /*padding: 40px;*/
   text-align: center;
   font-size: 17px;
   display: flex;
   flex-direction: column;
 }
 
-.tech-section p {
+.tech p {
   text-align: center;
 }
 
@@ -168,27 +174,27 @@ h6 {
   background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
-  padding: 40px;
   font-family: "Roboto", sans-serif;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .featured-projects {
   padding-bottom: 10px;
 }
 
+.featured-projects p {
+  max-width: 300px;
+}
+
 .other-projects {
-  padding: 10px 40px;
+  /*padding: 10px 40px; */
   text-align: center;
 }
 
 .featured-projects .bold-color-text {
   font-family: "Roboto", sans-serif;
-}
-
-.project-wrapper {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .project-image {
@@ -202,6 +208,10 @@ h6 {
   height: 180px;
   margin-top: 15px;
   font-family: "Roboto", sans-serif;
+}
+
+.article-project-wrapper {
+  max-width: 300px;
 }
 
 /*.project-container p {
@@ -228,6 +238,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 300px;
 }
 
 .overlay p {
@@ -266,6 +277,14 @@ h6 {
   text-decoration: none;
 }
 
+.project-flex-box {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
 .bold-color-arrows {
   text-decoration: underline;
   font-weight: bold;
@@ -274,7 +293,6 @@ h6 {
 
 .my-thoughts {
   background-color: #ffffff;
-  padding: 58px 40px;
   display: flex;
   flex-direction: column;
 }
@@ -287,6 +305,7 @@ h6 {
 .more-thoughts {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+  text-align: center;
 }
 
 .my-blog p {
@@ -306,9 +325,8 @@ h6 {
   color: tomato;
 }
 
-.skills-section {
+.skills {
   background-color: #f4f4f4;
-  padding: 58px 40px;
   display: flex;
   flex-direction: column;
 }
@@ -341,10 +359,9 @@ h6 {
   font-size: 17px;
 }
 
-.for-more-section {
+.more-section {
   background-color: #ffffff;
   /*padding: 58px 40px;*/
-  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -377,7 +394,7 @@ h6 {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 8px;
   font-weight: bold;
   /*width: 100px;*/
 }
@@ -421,7 +438,7 @@ h6 {
 
 .icon-container-bottom a {
   text-decoration: none;
-  margin-right: 20px;
+  width: 30%;
 }
 
 .bottom-icon-text {
@@ -431,11 +448,44 @@ h6 {
   font-weight: bold;
 }
 
-/* @media (max width 60%) add this to content containers 
+/* @media (max width 60%) add this to content containers */
 
-@media (min-width: 768px) {*/
+@media (min-width: 768px) {
+  .container {
+    width: 60%;
+  }
 
+  .icon-container-bottom p {
+    font-size: 12px;
+  }
+}
 @media (min-width: 1025px) {
-  .summary-section p {
+  .main-wrapper {
+    padding-left: 416px;
+    padding-right: 416px;
+  }
+
+  .header-container {
+    width: 60%;
+  }
+
+  /*.summary,
+  .tech p {
+    font-size: 30px;
+    line-height: 50px;
+  }*/
+
+  .tech-color-text {
+    color: tomato;
+  }
+
+  .icon-container-bottom {
+    width: 60%;
+  }
+
+  .icon-container-bottom .fa {
+    height: 40px;
+    width: 40px;
+    font-size: 40px;
   }
 }

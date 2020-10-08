@@ -12,39 +12,37 @@
   </head>
   <body>
     <header class="header">
-      <section class="icon-container-top">
-        <a href="https://www.linkedin.com" target="_blank" class="icon-wrapper-top">
-          <i class="fa fa-linkedin" aria-hidden="true"> </i>
-          <span class="sr-only">LinkedIn</span>
-        </a>
-        <a href="https://github.com" target="_blank" class="icon-wrapper-top">
-          <i class="fa fa-github" aria-hidden="true"></i>
-          <span class="sr-only">GitHub</span>
-        </a>
-        <a href="https://www.stackoverflow" target="_blank" class="icon-wrapper-top">
-          <i class="fa fa-stack-overflow" aria-hidden="true"></i>
-          <span class="sr-only">Stack Overflow</span>
-        </a>      
-      </section>
+      <section class="header-container">
+        <div class="icon-container-top">
+          <a href="https://www.linkedin.com" class="icon-wrapper-top">
+            <i class="fa fa-linkedin" aria-hidden="true"> </i>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+          <a href="https://github.com" class="icon-wrapper-top">
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span>
+          </a>
+          <a href="https://www.stackoverflow" class="icon-wrapper-top">
+            <i class="fa fa-stack-overflow" aria-hidden="true"></i>
+            <span class="sr-only">Stack Overflow</span>
+          </a>      
+        </div>
 
-      <section class="header-text">
-        <p>Portfolio: <span class="bold-text">Jamie Cook</span></p>
-        <h1>Frontend Developer</h2>
-        <h2>+ IT Analyst</h2>
-      </section>
-      <img
-        src="./assets/jamie-profile-image.png"
-        alt="profile picture of Jamie Cook"
-        class="profile-image"
-      />
-      <!--<picture>
-        <source srcset="./assets/imagine-cropped.png" media="(max-width:600px)" />
-        <source srcset="./assets/imagine.jpg" media="(max-width:900px)" />
-        <img srcset="./assets/imagine.jpg" alt="Image of a record playing" />
-      </picture> -->
+        <div class="header-text">
+          <p>Portfolio: <span class="bold-text">Jamie Cook</span></p>
+          <h1>Frontend Developer</h2>
+          <h2>+ IT Analyst</h2>
+        </div>
+        <img
+          src="./assets/jamie-profile-image.png"
+          alt="profile picture of Jamie Cook"
+          class="profile-image"
+        />
+     </section>  
     </header>
+
     <main>
-      <section class="summary-section">
+      <section class="main-wrapper summary">
         <p>
           <span class="summary-color-line"></span><span class="summary-color-dot"></span>Hello! I’m a strategic and creative senior art director/digital designer with frontend developer skills and experience design at. I’m all about solving problems that matter and creating awesome, meaningful products for people to love.
         </p>
@@ -52,38 +50,44 @@
         <span></span>
         <p></p>
       </section>
-      <section class="tech-section">
+      <section class="main-wrapper tech">
         <h3>Tech</h3>
         <p>
-          HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux,
+          HTML, CSS, Flexbox, <span class="tech-color-text">JavaScript,</span> ES6, JSX, <span class="tech-color-text">React, React Hooks, Redux,</span>
           Node.js, Mongo DB, Web Accessibly, API:s, mob-programming,
           pair-programming, Github.
         </p>
       </section>
-      <section class="featured-projects">
+      <section class="main-wrapper featured-projects">
         <h3>Featured projects</h3>
-        <article class="project-wrapper">
-          <a href="#">
-            <div class="project-container">
-              <img
-                src="./assets/profile-image.jpg"
-                alt="Project image"
-                class="project-image"
-              />
-              <div class="overlay">
-                <p>Sunny side up</p>
+        <div class="project-flex-box">
+          <article class="article-project-wrapper">
+            <a href="#">
+              <div class="project-container">
+                <img
+                  src="./assets/profile-image.jpg"
+                  alt="Project image"
+                  class="project-image"
+                />
+                <div class="overlay">
+                  <p>Sunny side up</p>
+                </div>
               </div>
-            </div>
+          
+        
             <p>
               <span class="bold-color-text">Weather App.</span> Web app built in JavaScript using open weather API <span class="bold-color-arrows">>></span>
             </p>
+          </a>
             <div class="tag-wrapper">
               <p>HTML5</p>
               <p>CSS3</p>
               <p>SASS</p>
               <p>JavaScript ES6</p>
             </div>
-            <article class="project-wrapper">
+          </article>
+        
+            <article class="article-project-wrapper">
               <a href="#">
                 <div class="project-container">
                   <img
@@ -98,20 +102,17 @@
                 <p>
                   <span class="bold-color-text">Weather App.</span> Web app built in JavaScript using open weather API <span class="bold-color-arrows">>></span>
                 </p>
+              </a>
                 <div class="tag-wrapper">
                   <p>HTML5</p>
                   <p>CSS3</p>
                   <p>SASS</p>
                   <p>JavaScript ES6</p>
                 </div>
-            <div class="project-description">
-              <span></span><span></span>
-              <p></p>
-            </div>
-          </a>
         </article>
+      </div>
       </section>
-      <div class="other-projects">
+      <section class="main-wrapper other-projects">
         <h4>Other projects</h4>
         <p>
           <span class="bold-color-text">Weather App.</span> Web app built in JavaScript using open weather API <span class="bold-color-arrows">>></span>
@@ -140,8 +141,8 @@
           <p>SASS</p>
           <p>JavaScript ES6</p>
         </div>
-      </div>
-      <section class="my-thoughts">
+      </section>
+      <section class="main-wrapper my-thoughts">
         <h3>My thoughts</h3>
         <img class="blog-image" src="./assets/my-thoughts-image.png" alt="image of a computer" />
         <article class="my-blog">
@@ -167,7 +168,7 @@
         </article>
       </section>
 
-      <section class="skills-section">
+      <section class="main-wrapper skills">
         <h3>Skills</h3>
         <div class="skills-wrapper">
           <article class="left-column">
@@ -211,20 +212,20 @@
           </article>
         </div>
       </section>
-      <section class="for-more-section">
+      <section class="more-section">
         <h3>For more</h3>
         <article class="icon-container-bottom">
-          <a href="https://www.linkedin.com" target="_blank" class="icon-wrapper-bottom">
+          <a href="https://www.linkedin.com" class="icon-wrapper-bottom">
             <i class="fa fa-linkedin" aria-hidden="true"> </i>
             <span class="sr-only">LinkedIn</span>
             <p class="bottom-icon-text">LinkedIn</p>
           </a>
-          <a href="https://github.com" target="_blank" class="icon-wrapper-wrapper">
+          <a href="https://github.com" class="icon-wrapper-wrapper">
             <i class="fa fa-github" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span>
             <p class="bottom-icon-text">GitHub</p>
           </a>
-          <a href="https://www.stackoverflow" target="_blank" class="icon-wrapper-wrapper">
+          <a href="https://www.stackoverflow" class="icon-wrapper-wrapper">
             <i class="fa fa-stack-overflow" aria-hidden="true"></i>
             <span class="sr-only">Stack Overflow</span>
             <p class="bottom-icon-text">Stack Overflow</p>
