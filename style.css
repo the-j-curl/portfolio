@@ -147,12 +147,6 @@ h6 {
 
 .summary {
   background-color: #f4f4f4;
-
-  font-size: 17px;
-  line-height: 29px;
-  /*display: flex;
-  align-items: center;
-  justify-content: center;*/
 }
 
 .summary-color-line {
@@ -176,7 +170,6 @@ h6 {
   /*padding: 58px 40px;*/
   /*padding: 40px;*/
   text-align: center;
-  font-size: 17px;
   display: flex;
   flex-direction: column;
 }
@@ -272,12 +265,12 @@ h6 {
 }
 
 .tag-wrapper p {
-  font-size: 9px;
+  font-size: 12px;
   font-family: "Roboto", sans-serif;
   color: #2b2e34;
   background-color: #fddfe7;
   border: 1px solid #fddfe7;
-  padding: 0 8px;
+  padding: 0 5px;
   margin-right: 3px;
   border-radius: 3px;
 }
@@ -343,13 +336,13 @@ h6 {
 }
 
 .blog-date {
-  font-weight: normal;
+  font-weight: 600;
   color: tomato;
-  margin-bottom: 5px;
+  margin-bottom: 0;
 }
 
 .span-dates {
-  font-weight: normal;
+  font-weight: 600;
   color: tomato;
 }
 
@@ -511,6 +504,27 @@ h6 {
     width: 60%;
   }
 
+  /*.header-text {
+    width: 70%;
+  }*/
+
+  .header-text h1 {
+    font-size: 60px;
+    line-height: 70px;
+    width: 50%;
+    margin-left: 0;
+  }
+
+  .header-text h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  p {
+    font-size: 19px;
+    line-height: 30px;
+  }
+
   h3,
   h4 {
     font-size: 30px;
@@ -524,6 +538,7 @@ h6 {
 
   .tech-color-text {
     color: tomato;
+    font-weight: 600;
   }
 
   .hide-blog {
