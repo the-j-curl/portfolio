@@ -197,14 +197,6 @@ h6 {
   max-width: 300px;
 }
 
-/*.other-projects {
-  text-align: center;
-}*/
-
-.other-projects-article {
-  margin-left: 0 40px;
-}
-
 .featured-projects .bold-color-text {
   font-family: "Roboto", sans-serif;
 }
@@ -226,9 +218,18 @@ h6 {
   max-width: 300px;
 }
 
-/*.project-container p {
-  font-family: "Roboto", sans-serif;
-} */
+.article-project-wrapper p {
+  color: #000000;
+}
+
+.other-projects-article p {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.other-projects-article .bold-color-text {
+  text-decoration: underline;
+}
 
 .blog-image {
   display: block;
@@ -265,14 +266,15 @@ h6 {
 }
 
 .tag-wrapper p {
-  font-size: 14px;
+  font-size: 12px;
   font-family: "Roboto", sans-serif;
   color: #2b2e34;
+  font-weight: bold;
   background-color: #fddfe7;
-  border: 1px solid #fddfe7;
   padding: 0 5px;
   margin-right: 3px;
-  border-radius: 3px;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
 .bold-color-text {
@@ -292,7 +294,7 @@ h6 {
 .project-flex-box {
   display: flex;
   width: 100%;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
@@ -479,10 +481,6 @@ h6 {
 
   .icon-container-bottom p {
     font-size: 12px;
-  }
-
-  .other-projects-article {
-    margin: 0;
   }
 
   .skills-wrapper {
