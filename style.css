@@ -422,7 +422,7 @@ h6 {
 }
 
 .footer {
-  background-color: #072bce;
+  background-color: #181616;
   color: #ffffff;
   padding: 40px;
   text-align: center;
@@ -438,6 +438,10 @@ h6 {
 .footer a {
   text-decoration: none;
   color: #ffffff;
+}
+
+.fav-icon {
+  font-size: 9px;
 }
 
 .contact-name {
@@ -459,6 +463,11 @@ h6 {
 @media (min-width: 768px) {
   .content {
     width: 60%;
+  }
+
+  .article-project-wrapper {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .icon-container-bottom p {
@@ -528,6 +537,13 @@ h6 {
   .hide-blog {
     display: flex;
     flex-direction: column;
+    margin-left: auto; /* this is for layout alignment on MS Edge */
+    margin-right: auto;
+  }
+
+  .my-blog {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .icon-container-bottom {
