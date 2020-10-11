@@ -458,6 +458,7 @@ h6 {
   color: tomato;
   text-transform: uppercase;
   font-weight: bold;
+  display: none;
 }
 
 @media (min-width: 768px) {
