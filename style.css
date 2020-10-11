@@ -15,6 +15,7 @@ h3 {
   line-height: 27px;
   color: #ffffff;
   background-color: tomato;
+  border-radius: 5px;
   text-transform: uppercase;
   padding: 5px 10px;
   display: flex;
@@ -45,18 +46,16 @@ h6 {
 }
 
 .header {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
   height: 508px;
   display: flex;
   justify-content: center;
-
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(187, 187, 187, 0.1)),
-    url(./assets/record-med.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(32, 32, 32, 0.3)),
+    url(./assets/header-image.jpg);
   background-repeat: no-repeat;
   background-attachment: local;
   background-position-x: center;
   background-position-y: 70%;
-  background-color: tomato;
 }
 
 .header-container {
@@ -104,11 +103,11 @@ h6 {
 
 .icon-container-top a {
   text-decoration: none;
-  color: #ffffff;
+  color: tomato;
 }
 
 .fa {
-  border: 3px solid white;
+  border: 3px solid tomato;
   border-radius: 50%;
   padding: 10px;
   font-size: 20px;
