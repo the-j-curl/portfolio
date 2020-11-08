@@ -327,7 +327,7 @@ h6 {
   margin-top: 5px;
 }
 
-.hide-blog {
+.hide-on-mobile {
   display: none;
 }
 
@@ -497,6 +497,10 @@ h6 {
   .right-column-two {
     width: 50%;
   }
+
+  .show-on-mobile {
+    display: none;
+  }
 }
 @media (min-width: 1025px) {
   .header-container {
@@ -534,11 +538,9 @@ h6 {
     font-weight: 600;
   }
 
-  .hide-blog {
+  .hide-on-mobile {
     display: flex;
     flex-direction: column;
-    margin-left: auto; /* this is for layout alignment on MS Edge */
-    margin-right: auto;
   }
 
   .my-blog {
@@ -562,5 +564,12 @@ h6 {
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
+  }
+}
+
+@media (min-width: 1520px) {
+  .article-project-wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
