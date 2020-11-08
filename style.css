@@ -216,9 +216,9 @@ h6 {
   color: #000000;
 }
 
-.other-projects-article p {
+.other-projects-article a {
   color: #000000;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .other-projects-article .bold-color-text {
