@@ -46,7 +46,7 @@ h6 {
 }
 
 .header {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #000;
   height: 508px;
   display: flex;
   justify-content: center;
@@ -110,7 +110,14 @@ h6 {
   border: 3px solid #ffffff;
   border-radius: 50%;
   padding: 10px;
-  font-size: 20px;
+  font-size: 22px;
+  height: 20px;
+  width: 20px;
+}
+
+.fa:hover {
+  color: tomato;
+  border: 3px solid tomato;
 }
 
 .bold-text {
@@ -235,7 +242,7 @@ h6 {
 .overlay {
   position: absolute;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   opacity: 1;
   color: white;
   font-size: 20px;
@@ -246,6 +253,11 @@ h6 {
   align-items: center;
   justify-content: center;
   max-width: 310px;
+  transition: 0.8s ease;
+}
+
+.overlay:hover {
+  opacity: 0;
 }
 
 .overlay p {
@@ -305,8 +317,13 @@ h6 {
 }
 
 .my-thoughts img {
-  border: 1px solid #707070;
+  border: 2px solid #707070;
   margin-top: 20px;
+}
+
+.my-thoughts img:hover {
+  border: 2px solid tomato;
+  transition: 0.5s ease;
 }
 
 .more-thoughts {
@@ -404,6 +421,11 @@ h6 {
   width: 20px;
   font-size: 29px;
   padding: 10px;
+}
+
+.icon-container-bottom .fa:hover {
+  border: 3px solid #181616;
+  color: #181616;
 }
 
 .icon-container-bottom p {
@@ -524,7 +546,7 @@ h6 {
   }
 
   p {
-    font-size: 19px;
+    font-size: 20px;
     line-height: 30px;
   }
 
