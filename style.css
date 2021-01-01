@@ -13,7 +13,7 @@ p {
 h3 {
   font-size: 22px;
   line-height: 27px;
-  color: #ffffff;
+  color: #fff;
   background-color: tomato;
   border-radius: 5px;
   text-transform: uppercase;
@@ -33,7 +33,7 @@ h4 {
 h5 {
   font-size: 21px;
   line-height: 25px;
-  color: #ffffff;
+  color: #fff;
   text-transform: uppercase;
   margin: 20px 0;
 }
@@ -68,7 +68,7 @@ h6 {
 }
 
 .header-text {
-  color: #ffffff;
+  color: #fff;
   padding: 0 40px;
 }
 
@@ -103,11 +103,11 @@ h6 {
 
 .icon-container-top a {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
 }
 
 .fa {
-  border: 3px solid #ffffff;
+  border: 3px solid #fff;
   border-radius: 50%;
   padding: 10px;
   font-size: 22px;
@@ -118,6 +118,7 @@ h6 {
 .fa:hover {
   color: tomato;
   border: 3px solid tomato;
+  transition: 0.5s ease;
 }
 
 .bold-text {
@@ -220,11 +221,11 @@ h6 {
 }
 
 .article-project-wrapper p {
-  color: #000000;
+  color: #000;
 }
 
 .other-projects-article a {
-  color: #000000;
+  color: #000;
   text-decoration: none;
 }
 
@@ -426,6 +427,7 @@ h6 {
 .icon-container-bottom .fa:hover {
   border: 3px solid #181616;
   color: #181616;
+  transition: 0.5s ease;
 }
 
 .icon-container-bottom p {
@@ -444,7 +446,7 @@ h6 {
 
 .footer {
   background-color: #181616;
-  color: #ffffff;
+  color: #fff;
   padding: 40px;
   text-align: center;
 }
@@ -458,7 +460,7 @@ h6 {
 
 .footer a {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
 }
 
 .fav-icon {
