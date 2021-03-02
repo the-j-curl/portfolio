@@ -463,12 +463,27 @@ h6 {
   color: #fff;
 }
 
+.footer a:hover {
+  color: tomato;
+}
+
 .fav-icon {
   font-size: 9px;
 }
 
 .contact-name {
   font-weight: bold;
+}
+
+.telephone-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flag-icons {
+  width: 24px;
+  margin: 0 10px;
 }
 
 .icon-container-bottom a {
@@ -526,7 +541,7 @@ h6 {
     display: none;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .header-container {
     width: 60%;
   }
@@ -588,6 +603,11 @@ h6 {
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
+  }
+
+  .flag-icons {
+    width: 28px;
+    margin: 0 10px 0 16px;
   }
 }
 
