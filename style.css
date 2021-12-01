@@ -115,6 +115,10 @@ h6 {
 	width: 20px;
 }
 
+.fa-envelope {
+	font-size: 20px;
+}
+
 .fa:hover {
 	color: tomato;
 	border: 3px solid tomato;
